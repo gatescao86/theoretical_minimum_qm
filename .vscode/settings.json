@@ -1,0 +1,11 @@
+{
+  "markdown.math.enabled": true,
+  "markdown.math.macros": {
+    "\\ket": "\\lvert #1 \\rangle",
+    "\\bra": "\\langle #1 \\rvert",
+    "\\braket": "\\langle #1 | #2 \\rangle",
+    "\\ketbra": "\\lvert #1 \\rangle\\langle #2 \\rvert",
+    "\\expect": "\\langle #1 \\rangle",
+    "\\comm": "\\left[#1,#2\\right]"
+  }
+}
