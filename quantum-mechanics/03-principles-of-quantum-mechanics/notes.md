@@ -61,19 +61,15 @@ The measurement is some kind of operation that the apparatus does to the system,
 
 ### 3.8 The Spin-Polarization Principle
 
-- Key idea:
-- Equations worth keeping:
-
-## Definitions
-
-| Term | Meaning |
-|---|---|
-|  |  |
-
-## Important equations
-
+- Any state of a single spin is an eigenvector of some component of the spin. 
+In other words, given any state 
+$$
+|A \rangle = \alpha_u |u \rangle + \alpha_d |d \rangle
+$$
+there exists some direction $\hat{n}$, such that 
+$$
+\vec{\sigma} \cdot \vec{n} |A \rangle = |A \rangle
 $$
 
-$$
+There's no state for which the expectation values of all three components of spin are zero.
 
-## Questions / things to revisit
