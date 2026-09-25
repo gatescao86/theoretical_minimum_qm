@@ -104,18 +104,79 @@ $$
 
 ### 4.10 Conservation of Energy
 
-- Key idea:
-- Equations worth keeping:
+If $Q$ commutes with the Hamiltonian, the expectation values of all functions of $Q$ are conserved.
 
 ### 4.11 Spin in a Magnetic Field
 
-- Key idea:
-- Equations worth keeping:
+The energy is proportional to the dot product of the spin and the magnetic field. The quantum version of this is 
+
+$$
+H \sim \vec{\sigma} \cdot \vec{B} = \sigma_x B_x + \sigma_y B_y + \sigma_z B_z
+$$
 
 ### 4.12 Solving the Schrödinger Equation
 
-- Key idea:
-- Equations worth keeping:
+Time dependent Schrödinger equation
+$$
+\hbar \frac{\partial |\Psi \rangle}{\partial t} = iH|\Psi \rangle
+$$
+
+Time independent Schrödinger equation
+$$
+H |E_j \rangle = E_j|E_j \rangle
+$$
+
+Eigenvectors form an othonormal basis and then expand the state-vector in that basis.
+
+$$
+|\Psi \rangle = \Sigma_j \alpha_j |E_j \rangle
+$$
+
+$$
+|\Psi(t) \rangle = \Sigma_j \alpha_j(t) |E_j \rangle
+$$
+
+Feed into the time-dependent equation.
+
+$$
+\Sigma_j \dot{\alpha_j}(t) |E_j \rangle = -\frac{i}{\hbar}H \Sigma_j \alpha_j(t) |E_j \rangle
+$$
+
+$$
+\Sigma_j \dot{\alpha_j}(t) |E_j \rangle = -\frac{i}{\hbar} \Sigma_j E_j \alpha_j(t) |E_j \rangle
+$$
+
+Regrouping:
+
+$$
+\Sigma_j \{\dot{\alpha_j}(t) + \frac{i}{\hbar}E_j \alpha_j(t)\} |E_j \rangle = 0
+$$
+
+If a sum of basis vectors equals zero, every coefficient must be zero.
+
+$$
+\frac{d \alpha_j(t)}{dt} = -\frac{i}{\hbar}E_j \alpha_j(t)
+$$
+
+The solution is 
+
+$$
+\alpha_j(t) = \alpha_j(0) e^{-\frac{i}{\hbar}E_jt}
+$$
+
+If we know the state-vector $|\Psi \rangle$ at time zero, then the coefficients are given by the projections of $|\Psi \rangle$ on the basis eigenvectors. 
+
+$$
+\alpha_j(0) = \langle E_j|\Psi(0) \rangle
+$$
+
+$$
+|\Psi(t) \rangle = \Sigma_j \langle E_j|\Psi(0) \rangle e^{-\frac{i}{\hbar}E_jt} |E_j \rangle
+$$
+
+$$
+|\Psi(t) \rangle = \Sigma_j |E_j \rangle \langle E_j|\Psi(0) \rangle e^{-\frac{i}{\hbar}E_jt} 
+$$
 
 ### 4.13 Recipe for a Schrödinger Ket
 
